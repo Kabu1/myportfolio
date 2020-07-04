@@ -42,6 +42,7 @@
   color: white;
   font-size: 30px;
   text-align: center;
+  
 }
 .homepage{
   position: relative;
@@ -57,10 +58,78 @@
   text-decoration: none;
 }
 .btn{
-color: khaki;
-text-decoration: none;
-padding: 10px;
-border: 1px solid khaki;
-border-radius: 15px;
-font-weight: 100;
+  color: khaki;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid khaki;
+  border-radius: 15px;
+  font-weight: 100;
+}
+.btn:hover{
+  color: greenyellow;
+}
+
+/*about me section styling*/
+
+#about h1{
+  text-align: center;
+  font-size: 28px;
+}
+#about h1::after {
+  content: '';
+  background: #222;
+  display: block;
+  height: 2px;
+  width: 15%;
+  margin: 15px auto 45px;
+}
+#about .container{
+  display: flex;
+  padding-bottom: 20px;
+}
+
+#about .content{
+  text-align: left;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+#about .content, #about .photo{
+  flex:1;
+}
+#about .photo img{
+  display: block;
+  margin-left: 50px;
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+/*interests styling*/
+#interests{
+  background: linear-gradient(rgba(130, 167, 163, 0.6), rgba(167, 204, 195, 0.986)),url(../img/home.jpg)  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  color: black;
+}
+#interests h1{
+  text-align: center;
+  font-size: 28px;
+}
+#interests h1::after {
+  content: '';
+  background: #222;
+  display: block;
+  height: 2px;
+  width: 15%;
+  margin: 15px auto 45px;
+}
+#interests p {
+  text-align: center;
 }
