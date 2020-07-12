@@ -54,7 +54,14 @@
 }
 .scroll{
   position: absolute;
-  bottom: 80px;
+  bottom: 20px;
+  text-decoration: none;
+}
+.scroll{
+  text-decoration: none;
+  padding: 70px;
+  font-weight: 100;
+  color: whitesmoke;
   text-decoration: none;
 }
 .btn{
@@ -69,11 +76,51 @@
   color: greenyellow;
 }
 
-/*about me section styling*/
+.arrow{
+  position: absolute;
+  top: 70%;
+  transform: translate(-50%,-50%);
+}
+.arrow span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+  animation-delay: -0.6s;
+}
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}
 
+
+/*about me section styling*/
+#about{
+  background: whitesmoke;
+  margin-top: -20px;
+}
 #about h1{
   text-align: center;
   font-size: 28px;
+  padding-top: 80px;
 }
 #about h1::after {
   content: '';
@@ -88,16 +135,16 @@
   padding-bottom: 20px;
 }
 
-#about .content{
+#text-box .content{
   text-align: left;
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
-#about .content, #about .photo{
+#text-box .content, #text-box .photo{
   flex:1;
 }
-#about .photo img{
+#text-box .photo img{
   display: block;
   margin-left: 50px;
   width: 300px;
@@ -105,6 +152,98 @@
   margin-top: 10px;
   border-radius: 50%;
 }
+#text-box{
+  background: whitesmoke;
+}
+.img-skills{
+  height: 250px;
+  width: 250px;
+
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 2px;
+  margin-left: 95px;
+}
+#about h3{
+  text-align: center;
+  font-size: 28px;
+  text-transform: uppercase;
+  padding-bottom: 1px;
+  line-height: 0px;
+}
+#about p{
+  text-align: center;
+}
+.pskills {
+  line-height: 1px;
+  font-style: italic;
+}
+hr {
+  width: 80%;
+  color: lightgray;
+}
+.row{
+  padding-bottom: 50px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*Projects Styling*/
+#projects {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#projects h1{
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: -10px;
+}
+#projects h1::after {
+  content: '';
+  background: #222;
+  display: block;
+  height: 2px;
+  width: 15%;
+  margin: 15px auto 45px;
+}
+
+#projects p{
+  text-align: center;
+  line-height: 1;
+}
+.col{
+  float: left;
+  width: 25%;
+  margin-left:90px;
+}
+.col img{
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.col img:hover{
+  transform: scale(1.25);
+  transform-origin: center;
+  transition: transform ease-in-out 500ms;
+}
+
+.col h4{
+  text-align: center;
+  padding-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(58, 136, 136);
+}
+
 
 /*interests styling*/
 #interests{
@@ -121,6 +260,7 @@
 #interests h1{
   text-align: center;
   font-size: 28px;
+  text-transform: uppercase;
 }
 #interests h1::after {
   content: '';
@@ -132,4 +272,91 @@
 }
 #interests p {
   text-align: center;
+}
+
+/*contact styling*/
+
+#contact {
+  background: rgb(130, 141, 130);
+  height: 400px;
+  padding-top: 20px;
+
+}
+
+#contact h1{
+  font-size: 28px;
+  text-align: center;
+}
+
+#contact h1::after {
+  content: '';
+  background: #222;
+  display: block;
+  height: 2px;
+  width: 15%;
+  margin: 15px auto 45px;
+}
+
+.card{
+  background: wheat;
+  width: 40%;
+  float: left;
+  padding: 20px;
+  margin-left: 60px;
+}
+.card-body{
+  color: rgb(0, 0, 0);
+}
+.card-body p{
+  font-size: 18px;
+  font-weight: lighter;
+}
+.card-body h4{
+  color: black;
+  text-align: center;
+}
+.card-body h4::after {
+  content: '';
+  background: #222;
+  display: block;
+  height: 2px;
+  width: 15%;
+  margin: 15px auto 45px;
+}
+.card-deck{
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 18px;
+}
+.submit{
+  color: black;
+  padding: 10px;
+  border: 1px solid black;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+
+/*Footer Styling*/
+#footer{
+  background: rgb(130, 141, 130);
+  margin-top: -10px;
+}
+.social{
+  text-align: center;
+  margin-top: 10px;
+}
+.social a{
+  color: black;
+  padding-left: 15px;
+}
+.copyright{
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.foot{
+  width: 100%;
+  border: 1px solid black;
 }

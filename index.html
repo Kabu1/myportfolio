@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>BENSON MBOCI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BENSON | PORTFOLIO</title>
 </head>
 <body id="portfolio">
     <!--Navbar-->
@@ -26,32 +27,69 @@
             <h1>WELCOME</h1>
             <p> I AM AN ASPIRING FULL STACK DEVELOPER</p>
        </div>
-       <div class="scroll">
-            <a href="#about" class="btn">About Me</a>
+       <div class="arrow">
+        <span></span>
+        <span></span>
        </div>
+       <div class="scroll">
+        <a href="#about" class="btn">Learn More</a>
+     </div>
     </div>
 </section>
 <!--About section-->
 <section id="about">
-<h1>ABOUT ME</h1>
+    <h1>ABOUT ME</h1>
     <div class="container">
-        <div class="photo">
-            <img src="img/2.jpg" alt="animated image showing a man coding">
-        </div>
-        <div class="content">
-            <p> Nairobi-Based result oriented <strong>full-stack developer</strong> that thrives on challenges.
-                I am currently a student at <em><strong>Moringa School</strong></em> pursuing prep course in my
-                 journey towards becoming a world class full-stack developer
-            </p>
-            <p>I joined  <em><strong>Moringa School </strong></em>  as i am always looking forward for and opportunity to do better an achieve greatness. 
-                Besides, I love meeting new people and finding a common ground with them.
-            </p>
+         <div id="text-box">
+            <div class="content">
+                <p> Nairobi-Based result oriented <strong>full-stack developer</strong> that thrives on challenges.
+                    I am currently a student at <em><strong>Moringa School</strong></em> pursuing prep course in my
+                     journey towards becoming a world class full-stack developer
+                </p>
+                <p>I joined  <em><strong>Moringa School </strong></em>  as i am always looking forward for and opportunity to do better an achieve greatness. 
+                    Besides, I love meeting new people and finding a common ground with them.
+                </p>
+            </div>
         </div>
     </div> 
-  
+    <h3>Skills</h3>
+    <p class="pskills">Below are the skills I have managed to grasp</p>
+        <hr>
+        <div class="row">
+            <div class="column">                    
+                <img src="img/git.png" alt="" class="img-skills">
+            </div> 
+            <div class="column">
+                <img src="img/index.png" alt="" class="img-skills">
+            </div>
+            <div class="column">
+                <img src="img/css.png" alt="" class="img-skills">
+            </div>
+            <hr>        
+        </div>
+        
 </section>
 <!--Projects section-->
-<section id="projects"></section>
+<section id="projects">
+    <h1>Projects</h1>
+    <p>Some Of The Projects I Have Completed</p>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="img/sol.png" alt="Sauti-sol ban website photo">
+                <h4>Sauti-Sol and Their Upcoming Events</h4>
+            </div>
+            <div class="col">
+                <img src="img/happy.png" alt="happy trails travel agency website photo">
+                <h4>Happy Trails Travel Agency Website</h4>
+            </div>
+            <div class="col">
+                <img src="img/bam.jpg" alt="bam bam resort website photo">
+                <h4>Bam-Bam Resort Website</h4>
+            </div>
+        </div>
+    </div>
+</section>
 <!--Interests section-->
 <section id="interests">
     <h1>Interests and Hobbies</h1>
@@ -70,5 +108,64 @@
     </div>
 </section>
 <!--Contact section-->
-<section id="contact"></section>
+<section id="contact">
+    <h1>CONTACT</h1>
+    <div class="card-deck">
+        <div class="card ">
+            <div class="card-body">
+            <h4>Reach Out</h4>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" placeholder="Fname"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td> <input type="text" placeholder="Lname"></td>
+                </tr>
+                <tr>
+                    <td>Phone No:</td>
+                    <td> <input type="number" placeholder="Phone no.">  </td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td> <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea> </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="submit"></td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <div class="card ">
+            <div class="card-body">
+                <div class="phone">
+                    <i class="fa fa-phone fa-5x" aria-hidden="true"> </i>
+                    <p>+254718839000</p>
+                </div>
+                <hr>
+                <div class="email">
+                    <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
+                    <p>Bensonmk99@gmail.com</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Footer section-->
+<section id="footer">
+    <div class="social-icons">
+        <hr class="foot">
+        <div class="social">
+            <a href="https://github.com/Kabu1"> <i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/"> <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/"> <i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © 2020 All rights reserved</p>
+    </div>
+</section>
+</body>
 </html>
