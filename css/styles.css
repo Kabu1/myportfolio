@@ -246,6 +246,11 @@ hr {
   color: rgb(58, 136, 136);
 }
 
+@media (min-width: 767px) {
+  #projects .col img {
+    margin: 0 0 30px;
+  }
+}
 
 /*interests styling*/
 #interests{
@@ -346,6 +351,7 @@ hr {
   background: rgb(130, 141, 130);
   margin-top:-10px;
   height: 35vh;
+  padding-top: 70px;
 }
 .social{
   text-align: center;
