@@ -308,6 +308,7 @@ hr {
 }
 .card-body{
   color: rgb(0, 0, 0);
+  padding-bottom: 15px;
 }
 .card-body p{
   font-size: 20.8px;
@@ -344,11 +345,13 @@ hr {
 #footer{
   background: rgb(130, 141, 130);
   margin-top: -10px;
+  height: 35vh;
 }
 .social{
   text-align: center;
   margin-top: 10px;
 }
+
 .social a{
   color: black;
   padding-left: 15px;
