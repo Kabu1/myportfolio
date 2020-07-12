@@ -1,3 +1,5 @@
+
+
 #portfolio{
   margin: 0px;
   padding: 0px;
@@ -278,7 +280,7 @@ hr {
 
 #contact {
   background: rgb(130, 141, 130);
-  height: 400px;
+  height: 60vh;
   padding-top: 20px;
 
 }
@@ -308,7 +310,7 @@ hr {
   color: rgb(0, 0, 0);
 }
 .card-body p{
-  font-size: 18px;
+  font-size: 20.8px;
   font-weight: lighter;
 }
 .card-body h4{
@@ -354,7 +356,6 @@ hr {
 .copyright{
   text-align: center;
   padding-bottom: 5px;
-  padding-top: 5px;
 }
 .foot{
   width: 100%;
