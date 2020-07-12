@@ -344,7 +344,7 @@ hr {
 /*Footer Styling*/
 #footer{
   background: rgb(130, 141, 130);
-  margin-top: -10px;
+  margin-top:-10px;
   height: 35vh;
 }
 .social{
